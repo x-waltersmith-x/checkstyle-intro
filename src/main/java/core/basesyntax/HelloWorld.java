@@ -4,7 +4,7 @@ import core.basesyntax.model.Cat;
 import core.basesyntax.model.Dog;
 import java.time.LocalDate;
 
-public class Hello_World {
+public class HelloWorld {
     private String welcomeMessage;
     private int currentYear;
     private int age;
@@ -14,6 +14,9 @@ public class Hello_World {
     public static void main(String[] args) {
         Dog dog = new Dog();
         Cat cat = new Cat();
+
+        args[0] = cat.toString();
+        args[1] = dog.toString();
     }
 
     private String getFromOneToTen() {
